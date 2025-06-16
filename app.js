@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-app.get('/', (req, res) => res.send('Hello World here is thew update...egci341'))
+app.get('/', (req, res) => res.json({ message: 'Hello World' }))
 
 app.listen(3000, () => console.log('server start'))
 
